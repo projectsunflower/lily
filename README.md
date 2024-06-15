@@ -10,7 +10,7 @@ This project automates daily meter reading using M5STACK timer camera x (https:/
 •	Wi-Fi network
 
 ## File Structure
-meter-reading-automation/
+lily/
 |-- m5stack_camera/
 |   |-- main_water.cpp           # Arduino code for Water meter camera
 |   |-- main_gas.cpp             # Arduino code for Gas meter camera
