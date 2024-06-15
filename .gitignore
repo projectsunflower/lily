@@ -1,0 +1,4 @@
+# Define what to ignore in Git
+
+*.pyc
+__pycache__/

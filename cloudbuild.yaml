@@ -1,0 +1,11 @@
+# Cloud Build configuration file
+
+steps:
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['build', '-t', 'gcr.io/your-project-id/your-image-name', '.']
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['push', 'gcr.io/your-project-id/your-image-name']
+  - name: 'gcr.io/cloud-builders/gcloud'
+    args: ['run', 'deploy', 'your-service-name', '--image', 'gcr.io/your-project-id/your-image-name', '--platform', 'managed', '--region', 'your-region']
+
+# Replace your-project-id, your-image-name, your-service-name, and your-region with your actual values.
