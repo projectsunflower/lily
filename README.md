@@ -4,29 +4,29 @@ This project automates daily meter reading using M5STACK timer camera x (https:/
 
 ## Prerequisites
 
-•	Google Cloud Platform account
-•	M5Stack Timer Camera X
-•	M5Stack Flashlight
-•	Wi-Fi network
+- Google Cloud Platform account
+- M5Stack Timer Camera X
+- M5Stack Flashlight
+- Wi-Fi network
 
 ## File Structure
-lily/
-|-- m5stack_camera/
-|   |-- main_water.cpp           # Arduino code for Water meter camera
-|   |-- main_gas.cpp             # Arduino code for Gas meter camera
-|   |-- main_electricity.cpp     # Arduino code for Electricity meter camera
-|   |-- M5Stack_Libraries/       # Libraries specific to M5Stack
-|-- cloud_functions/
-|   |-- main.py                  # Cloud Function to process images and store data in Firestore
-|-- flask_app/
-|   |-- app.py                   # Flask application for displaying meter readings
-|   |-- templates/
-|       |-- index.html           # HTML template for displaying graphs
-|-- Dockerfile                   # Dockerfile for containerizing Flask app
-|-- cloudbuild.yaml              # Cloud Build configuration file
-|-- README.md                    # Project overview, setup instructions, and usage guide
-|-- requirements.txt             # Python dependencies for Flask app
-|-- .gitignore                   # Define what to ignore in Git
+- lily/
+- |-- m5stack_camera/
+- |   |-- main_water.cpp           # Arduino code for Water meter camera
+- |   |-- main_gas.cpp             # Arduino code for Gas meter camera
+- |   |-- main_electricity.cpp     # Arduino code for Electricity meter camera
+- |   |-- M5Stack_Libraries/       # Libraries specific to M5Stack
+- |-- cloud_functions/
+- |   |-- main.py                  # Cloud Function to process images and store data in Firestore
+- |-- flask_app/
+- |   |-- app.py                   # Flask application for displaying meter readings
+- |   |-- templates/
+- |       |-- index.html           # HTML template for displaying graphs
+- |-- Dockerfile                   # Dockerfile for containerizing Flask app
+- |-- cloudbuild.yaml              # Cloud Build configuration file
+- |-- README.md                    # Project overview, setup instructions, and usage guide
+- |-- requirements.txt             # Python dependencies for Flask app
+- |-- .gitignore                   # Define what to ignore in Git
 
 
 ## Google Cloud Platform Setup
